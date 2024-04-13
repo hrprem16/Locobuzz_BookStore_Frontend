@@ -1,0 +1,215 @@
+.heading{
+    display: flex;
+    height: 70px;
+    align-items: center;
+    background-color: white;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .bookdetails{
+    display: flex;
+    gap: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 10px;
+  }
+  #grey{
+    color: grey;
+  }
+  #bookid{
+    font-size: 15px;
+    font-weight: 450;
+  }
+  .imagecapsule{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .bookimageside{
+    display: flex;
+    gap: 10px;
+  }
+  
+  .book {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .book-img-top {
+    width: 50%;
+    height: 50%;
+    padding: 20px 0;
+  }
+  
+  .book-body {
+    padding: 20px;
+  }
+  
+  .book-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .book-text {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
+  .book-text span {
+    font-weight: bold;
+  }
+  #discountprice{
+    font-size: 18px;
+    font-weight: bold;
+  }
+  #price{
+    color: #9f9b9b;
+    text-decoration: line-through;
+  }
+  #author{
+    color: #9f9b9b;
+  }
+  #rating{
+    background-color: #388E3C;
+    padding: 5px 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+  }
+  .image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px 5px 0 0;
+    background-color: #F5F5F5;
+  }
+  #star{
+    font-size: 18px;
+    fill: 1;
+  }
+  
+  .rate{
+    display: flex;
+    gap: 10px;
+  }
+  
+  .review{
+    display:flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .book-title{
+    font-size: 25px;
+    font-weight: 350;
+  }
+  
+  #discountprice{
+    font-size: 25px;
+    font-weight: 400;
+  }
+  
+  .description{
+    display: flex;
+    flex-direction: column;
+    border-top: 2px solid rgba(128, 128, 128, 0.387);
+    border-bottom:2px solid rgba(128, 128, 128, 0.387);
+    padding: 50px 0;
+    margin-top: 30px;
+    font-size: 20px;
+    gap: 5px;
+    span{
+      color: rgba(128, 128, 128, 0.387);
+      font-size: 20px;
+      font-weight: 350;
+    }
+    p{
+      font-size: 14px;
+      font-weight: 300;
+    }
+  }
+  .bookImage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 30px ;
+    border: 1px solid black;
+    height: fit-content;
+    width: fit-content;
+  }
+  .imagecapsule>img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    border: 1px solid black;
+  }
+  .top-items-and-sortingByPrice{
+    display: flex;
+    justify-content: space-between;
+    position:fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: white;
+    padding: 10px 5%;
+    margin-top: 70px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+  
+  }
+  
+  .dropbtn{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 160px;
+    height: 40px;
+    border:  1px solid rgba(128, 128, 128, 0.648);
+    padding-left:10px;
+    background-color: white;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  .dropdown-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    height: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border:  1px solid rgba(128, 128, 128, 0.648);
+    background-color: white;
+    border-radius: 2px;
+  }
+  .dropdown-content button{
+    height: 55px;
+    cursor: pointer;
+    border: none;
+    text-align: start;
+    padding-left: 10px;
+    background-color: white;
+  
+  }
+  .Books-items-count{
+    display: flex;
+    align-items: center;
+    gap:5px;
+  }
+  .container{
+    margin-top: 70px;
+    margin-bottom: 70px;
+  
+  }

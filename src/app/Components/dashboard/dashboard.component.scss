@@ -1,0 +1,139 @@
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .header{
+    width: 100%;
+    height: 70px;
+    background-color:#A03037;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+  .header-items{
+    width:75%;
+    height: 100%;
+    display:flex;
+    justify-content:space-between;
+  }
+  .bookstore-and-search{
+    display: flex;
+    justify-content: space-between;
+    justify-content:start;
+    gap:10%;
+    align-items: center;
+    width:70%;
+  }
+  #input-field{
+    min-width:30%;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    padding-left: 10px;
+    outline: none;
+  }
+  .logo-section{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap:10px;
+    cursor: pointer;
+  }
+  .profile-cart{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .profile-cart button{
+    background-color: transparent;
+    border:none;
+    color: white;
+    width: 80px;
+  }
+  .cart-count{
+    height: 18px;
+    width: 18px;
+    background-color: white;
+    border-radius: 50%;
+    color:#A03037;
+    position: absolute;
+    right: 14%;
+    top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Searchbar{
+    display: flex;
+    width: 100%;
+    background-color: white;
+    align-items: center;
+    height:40px;
+    padding: 0 5px;
+    border-radius: 2px;
+  }
+  .profile-menu {
+    position:fixed;
+    top: 70px;
+    right:13%;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    z-index: 3;
+    background-color: white;
+  }
+  .profile-menu button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap:10px;
+    border: none;
+    padding:5px;
+    background-color: transparent;
+    padding-left: 20px;
+    cursor: pointer;
+  }
+  .profile-menu button p{
+    margin: 0;
+  }
+  
+  .logout-button {
+   border:1px solid #A03037 !important;
+   width: 60% !important;
+   margin-left: 20px;
+  }
+  #profile:hover{
+    background-color:#FFDCDD;
+    color: #A03037;
+  
+  }
+  .dash{
+    height: 4px;
+    width:98%;
+    background-color: white;
+    border-radius: 50px;
+  }
+  .main{
+    height:auto;
+  }
+
+.footer{
+  height:50px;
+  color: white;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  padding:20px 0;
+  padding-left:7%;
+
+}
+ 

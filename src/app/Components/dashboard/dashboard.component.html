@@ -1,0 +1,62 @@
+<div class="container">
+    <div class="header">
+        <div class="header-items">
+            <div class="bookstore-and-search">
+                <div class="logo-section" routerLink="/home">
+                    <img src="../../../assets/dashboard/education.png" alt="">
+                    <span style="color: white; font-size: 20px;">BookStore</span>
+                </div>
+                <div class="Searchbar">
+                    <span class="material-symbols-outlined" style="color:grey">
+                        search
+                    </span>
+                    <input type="text" id="input-field" placeholder="Search">
+                </div>
+            </div>
+            <div class="profile-cart">
+                <button (click)="profileMenuToggle()">
+                    <span class="material-symbols-outlined" style="font-size: 25px; cursor: pointer;">
+                        person
+                    </span>
+                    <p>Profile</p>
+                    <div class="dash" [style.opacity]="isProfileMenuOpen?1:0"></div>
+                </button>
+                <button style="margin-top: -4px;" routerLink="/home/mycart">
+                    <span class="material-symbols-outlined" style="font-size: 25px; cursor: pointer;">
+                        shopping_cart
+                    </span>
+                    <p>Cart</p>
+                    <div class="cart-count">{{cartnumber}}</div>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="profile-menu" *ngIf="isProfileMenuOpen">
+        <h3 style="padding-left: 20px;">Hello Profile,</h3>
+        <button id="profile">
+            <span class="material-symbols-outlined">
+                person
+            </span>
+            <p>Profile</p>
+        </button>
+        <button>
+            <span class="material-symbols-outlined">
+                shopping_bag
+            </span>
+            <p>My Orders</p>
+        </button>
+        <button>
+            <span class="material-symbols-outlined">
+                favorite
+            </span>
+            <p>Wishlist</p>
+        </button>
+        <button mat-button class="logout-button">Logout</button>
+    </div>
+    <div class="main">
+        <router-outlet />
+    </div>
+    <div class="footer">
+        Copyright ©️ 2020, Bookstore Private Limited. All Rights Reserved
+    </div>
+</div>

@@ -1,0 +1,76 @@
+.container {
+    margin: 0 auto;
+  
+    h2 {
+      font-size: 20px;
+      font-weight: 300;
+      margin-bottom: 20px;
+      margin-top: 10px;
+    }
+    span{
+      font-size: 15px;
+      font-weight: 300;
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+    .rating {
+      display: inline-flex;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      margin-bottom: 20px;
+      color: #fff;
+  
+  
+      input[type="radio"] {
+        display: none;
+      }
+  
+      label {
+        cursor: pointer;
+        font-size: 24px;
+        color: white;
+        margin: 0 4px;
+      }
+  
+  
+      label:hover,
+      label:hover ~ label,
+      input[type="radio"]:checked ~ label {
+        color: #ffc107; /* Change this color to your desired star color */
+      }
+    }
+  
+    .submit-btn {
+      background-color: #007bff; /* Change this color to your desired button color */
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 18px;
+      transition: background-color 0.3s;
+  
+      &:hover {
+        background-color: #0056b3; /* Change this color to your desired hover color */
+      }
+    }
+  }
+  .dataform{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(128, 128, 128, 0.387);
+    padding: 0 30px;
+  }
+  #input{
+    width: 100%;
+    overflow: hidden;
+    resize:none;
+    height: fit-content;
+    outline: none;
+    font-size: 15px;
+  }
+  button{
+    margin-top: 20px;
+    align-self: flex-end;
+  }
+  

@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="bookstoreImage">
+        <img src="../../../assets/login/component.png" alt="bookstoreImage">
+        <h5>ONLINE BOOK SHOPPING</h5>
+    </div>
+    <div class="login-signup">
+        <div class="button_change">
+            <button mat-button routerLink="/login" style="color: grey;">LOGIN</button>
+            <button mat-button routerLink="/register" style="border-bottom:3px solid #A03037;">SIGNUP</button>
+        </div>
+        <form class="form" [formGroup]="registerForm" (ngSubmit)="registerSubmit()">
+            <div class="fullname">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" formControlName="fullname">
+            </div>
+            <!-- <span> <mat-error *ngIf="registerForm.get('fullname')?.hasError('required')">
+                    Fullname is required!
+                </mat-error></span> -->
+            <div class="email">
+                <label for="email">Email Id</label>
+                <input type="text" id="email" formControlName="email">
+            </div>
+            <!-- <span> <mat-error *ngIf="registerForm.get('email')?.hasError('required')">
+                    Email is required!
+                </mat-error></span> -->
+            <div class="password">
+                <label for="password">Password</label>
+                <div class="password-field">
+                    <input [type]="hide ? 'password' : 'text'" id="password" formControlName="password">
+                    <button type="button" mat-icon-button matSuffix (click)="togglePasswordVisibility()">
+                        <mat-icon>{{ hide ? 'visibility_off' : 'visibility' }}</mat-icon>
+                    </button>
+                </div>
+            </div>
+
+            <div class="mobilenumber">
+                <label for="number">Mobile Number</label>
+                <input type="text" id="number" formControlName="number">
+
+            </div>
+            <button mat-flat-button style="background-color:#A03037; color: white; height: 45px;">Signup</button>
+
+        </form>
+    </div>
+</div>

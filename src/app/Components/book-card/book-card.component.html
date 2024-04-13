@@ -1,0 +1,20 @@
+<div class="card" (click)="sendId(book.book_id)">
+  <div class="image">
+    <img class="card-img-top" [src]="book.book_image" alt="Book Image" style=" width: 200px; height: 250px;">
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">{{book.book_name.substring(0,25)}}</h5>
+    <p class="card-text" id="author">by {{book.book_Author.substring(0,20)}}</p>
+    <div class="review">
+      <p class="card-text" id="rating">4.5
+        <span class="material-symbols-outlined">star</span>
+      </p>
+      <p class="card-text">(20)</p>
+    </div>
+
+    <div class="rate">
+      <p class="card-text" id="discountprice">Rs. {{book.book_Discount_Price}}</p>
+      <p class="card-text" id="price">Rs. {{book.book_Price}}</p>
+    </div>
+  </div>
+</div>

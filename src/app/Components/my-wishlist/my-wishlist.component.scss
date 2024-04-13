@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+.top-text{
+    display:flex;
+}
+.wishlist-container{
+    display: flex;
+    flex-direction: column;
+}
+.wishlist-container h2{
+    border: 1px solid rgba(128, 128, 128, 0.474);
+    background-color: #F5F5F5;
+    margin-bottom: 0;
+    height: 60px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+    padding:12px 0px;
+    padding-left: 5%;
+}
+.wishlist-items{
+    border: 1px solid rgba(128, 128, 128, 0.474);
+    width: 100%;
+    height: auto;
+    padding:30px 5%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.book-items{
+    width: 50%;
+    display: flex;
+    gap:8%;
+}
+.price-details{
+    display: flex;
+    align-items: center;
+    gap:20px;
+}

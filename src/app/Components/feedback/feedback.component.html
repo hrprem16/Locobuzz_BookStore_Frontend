@@ -1,0 +1,23 @@
+<div class="container">
+    <h2>Customer Feedback</h2>
+    <div class="dataform">
+      <span>Overall rating</span>
+      <div class="rating">
+        <input type="radio" id="star1" name="rating" value="1" (click)="updateRating(1)" [checked]="selectedRating >= 1">
+        <label for="star1"><i class="material-icons">star</i></label>
+        <input type="radio" id="star2" name="rating" value="2" (click)="updateRating(2)" [checked]="selectedRating >= 2">
+        <label for="star2"><i class="material-icons">star</i></label>
+        <input type="radio" id="star3" name="rating" value="3" (click)="updateRating(3)" [checked]="selectedRating >= 3">
+        <label for="star3"><i class="material-icons">star</i></label>
+        <input type="radio" id="star4" name="rating" value="4" (click)="updateRating(4)" [checked]="selectedRating >= 4">
+        <label for="star4"><i class="material-icons">star</i></label>
+        <input type="radio" id="star5" name="rating" value="5" (click)="updateRating(5)" [checked]="selectedRating >= 5">
+        <label for="star5"><i class="material-icons">star</i></label>
+      </div>
+      <div class="input">
+        <textarea name="feedbackinput" id="input" cols="30" rows="10"></textarea>
+      </div>
+      <button class="submit-btn" (click)="submitFeedback()">Submit</button>
+    </div>
+  </div>
+  

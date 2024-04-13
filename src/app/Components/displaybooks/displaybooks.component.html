@@ -1,0 +1,25 @@
+<div class="top-items-and-sortingByPrice">
+    <div class="Books-items-count">
+        <h3 style="text-align: center;">Books</h3>
+        <p> ({{num}} items)</p>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn" (click)="toggleDropdown()">
+            Sort by relevance
+            <span class="material-symbols-outlined">
+                arrow_drop_down
+            </span>
+        </button>
+        <div class="dropdown-content" *ngIf="dropdownOpen">
+            <button (click)="sortByLowHigh()">Price: Low to High</button>
+            <button (click)="sortByHighLow()"> Price: High to Low</button>
+            <button (click)="sortByCreation()"> Newest Arrivals</button>
+        </div>
+    </div>
+</div>
+<div class="card-display">
+    <div class="book" *ngFor="let databook of data">
+        <app-book-card [book]="databook"></app-book-card>
+    </div>
+
+</div>
